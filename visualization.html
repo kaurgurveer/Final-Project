@@ -42,10 +42,12 @@
       });
     </script>
 
-    <h1>Visualization</h1>
+    <h1 class="visualization">Visualization</h1>
   </header>
 
   <main>
+    <br>
+    <h2 class="visualization">Confirmed Cases</h2>
     <div id="confirmedPlot"></div>
     <script>
       var schema1 = {
@@ -61,6 +63,16 @@
       vegaEmbed('#confirmedPlot', schema1);
     </script>
 
+    <h3>Top 3 Countries with confirmed COVID cases:</h3>
+    <ol type="1">
+      <li>US</li>
+      <li>India</li>
+      <li>Brazil</li>
+    </ol>
+    <br>
+    <br>
+
+    <h2 class="visualization">Recovered Cases</h2>
     <div id="recoveredPlot"></div>
     <script>
       var schema2 = {
@@ -76,6 +88,16 @@
       vegaEmbed('#recoveredPlot', schema2);
     </script>
 
+    <h3>Top 3 Countries recovered from COVID cases:</h3>
+    <ol type="1">
+      <li>India</li>
+      <li>Brazil</li>
+      <li>Russia</li>
+    </ol>
+    <br>
+    <br>
+
+    <h2 class="visualization">Death Cases</h2>
     <div id="deathPlot"></div>
     <script>
       var schema = {
@@ -91,6 +113,16 @@
       vegaEmbed('#deathPlot', schema);
     </script>
 
+    <h3>Top 3 Countries with most deaths from COVID cases:</h3>
+    <ol type="1">
+      <li>US</li>
+      <li>Brazil</li>
+      <li>India</li>
+    </ol>
+    <br>
+    <br>
+
+    <h2 class="visualization">Active Cases</h2>
     <div id="activePlot"></div>
     <script>
       var schema3 = {
@@ -106,22 +138,12 @@
       vegaEmbed('#activePlot', schema3);
     </script>
 
-    <!--<div id="stackedPlot"></div>
-    <script>
-      var schema1 = {
-        "$schema1": "https://vega.github.io/schema/vega-lite/v4.json",
-        "description": "A simple bar chart with embedded data.",
-        "data": {"url": "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv"},
-        "mark": "bar",
-        "encoding": {
-          "x": {"field": "Country_Region", "type": "nominal"},
-          "y": {"aggregate": "sum", "field": "Deaths", "type": "quantitative"},
-          "color": {"field": "Province_State", "type": "nominal"}
-        }
-      };
-      vegaEmbed('#stackedPlot', schema1);
-    </script>-->
-
+    <h3>Top 3 Countries with active COVID cases:</h3>
+    <ol type="1">
+      <li>US</li>
+      <li>France</li>
+      <li>United Kingdom</li>
+    </ol>
   </main>
 
 </body>
