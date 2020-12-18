@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Gurveer Kaur">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <!--Load Vega-lite-->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.0.0-beta.8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@5.1.3"></script>
+  <title>Gurveer's Portfolio</title>
+  <link rel="Tab icon" type="image/png" href="android-chrome-192x192.png"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <script src="app.js"></script>
+
+    <!--Loading Animation:-->
+    <div class="overlay">
+      <div class="spinner"></div>
+    </div>
+
+    <script>
+      let overlay1 = document.querySelector('.overlay')
+      window.addEventListener('load', function(){
+        overlay1.parentElement.removeChild(overlay1);
+      });
+    </script>
+
+    <h1>Visualization</h1>
+  </header>
+
+  <main>
+    <div id="confirmedPlot"></div>
+    <script>
+      var schema1 = {
+        "$schema1": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "A simple bar chart that displays the total confirmed cases for each country.",
+        "data": {"url": "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv"},
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Country_Region", "type": "nominal", "title": "Country"},
+          "y": {"aggregate": "sum", "field": "Confirmed", "type": "quantitative"}
+        }
+      };
+      vegaEmbed('#confirmedPlot', schema1);
+    </script>
+
+    <div id="recoveredPlot"></div>
+    <script>
+      var schema2 = {
+        "$schema1": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "A simple bar chart that displays the total recovered cases for each country.",
+        "data": {"url": "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv"},
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Country_Region", "type": "nominal", "title": "Country"},
+          "y": {"aggregate": "sum", "field": "Recovered", "type": "quantitative"}
+        }
+      };
+      vegaEmbed('#recoveredPlot', schema2);
+    </script>
+
+    <div id="deathPlot"></div>
+    <script>
+      var schema = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "A simple bar chart that displays the total death cases for each country.",
+        "data": {"url": "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv"},
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Country_Region", "type": "nominal", "title": "Country"},
+          "y": {"aggregate": "sum", "field": "Deaths", "type": "quantitative"}
+        }
+      };
+      vegaEmbed('#deathPlot', schema);
+    </script>
+
+    <div id="activePlot"></div>
+    <script>
+      var schema3 = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "A simple bar chart that displays the total active cases for each country.",
+        "data": {"url": "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv"},
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Country_Region", "type": "nominal", "title": "Country"},
+          "y": {"aggregate": "sum", "field": "Active", "type": "quantitative"}
+        }
+      };
+      vegaEmbed('#activePlot', schema3);
+    </script>
+
+    <!--<div id="stackedPlot"></div>
+    <script>
+      var schema1 = {
+        "$schema1": "https://vega.github.io/schema/vega-lite/v4.json",
+        "description": "A simple bar chart with embedded data.",
+        "data": {"url": "https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv"},
+        "mark": "bar",
+        "encoding": {
+          "x": {"field": "Country_Region", "type": "nominal"},
+          "y": {"aggregate": "sum", "field": "Deaths", "type": "quantitative"},
+          "color": {"field": "Province_State", "type": "nominal"}
+        }
+      };
+      vegaEmbed('#stackedPlot', schema1);
+    </script>-->
+
+  </main>
+
+</body>
+
+</html>

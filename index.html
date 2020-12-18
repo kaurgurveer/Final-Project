@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Gurveer Kaur">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Gurveer's Portfolio</title>
+  <link rel="Tab icon" type="image/png" href="android-chrome-192x192.png"/>
+</head>
+<body id="index-body">
+  <header>
+
+    <!--Loading Animation:-->
+    <div class="overlay">
+      <div class="spinner"></div>
+    </div>
+
+    <script>
+      let overlay1 = document.querySelector('.overlay')
+      window.addEventListener('load', function(){
+        overlay1.parentElement.removeChild(overlay1);
+      });
+    </script>
+
+    <!--Nav Bar:-->
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <script src="app.js"></script>
+
+  </header>
+
+  <main class="container-index">
+    <h1 id="indexH1">Hello, I am Gurveer Kaur</h1>
+    <p id="indexP">UX/UI Designer & Informatics major at UCI</p>
+
+    <div class="page2">
+      <section class="card">
+        <img src="Bird.png" alt="Bird Scooter Logo" class="img-card">
+        <div>
+          <h2>Bird Redesign</h2>
+          <p>The initial problem that we wanted to fix when we chose to redesign Bird was the app’s similar appearance to its competitors. Bird and numerous other scooter and bike sharing apps all look relatively the same. As our team dug deeper into studying the app’s features, we determined that there were many issues that need fixing. After carefully evaluating Bird, we have proposed redesigned the safety feature, the map interface, the promos page, the introductory feature, and the report page.</p>
+          <div class="subtitle"><a href="BirdRedesign.html">Learn More</a></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="COVID-19.jpg" alt="COVID-19 update picture" class="img-card1">
+        <div>
+          <h2>Visualization</h2>
+          <p>Incorporated a third party API and will display visulatization of COVID-19 data.</p>
+          <div class="subtitle"><a href="visualization.html">Learn More</a></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="sparkset.png" alt="sparkset logo" class="img-card">
+        <div>
+          <h2>Sparkset</h2>
+          <p>We will be improving the overall UX/UI design of the website while implementing new features.</p>
+          <p>(Project is still in progress)</p>
+          <div class="subtitle"><a href="sparkset.html">Learn More</a></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
