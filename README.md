@@ -1,6 +1,6 @@
 # Portfolio
 How to run Project:  
-Download the zip file and open it. Open the index.html file with a browser and then you will be able to see the website.
+Download the zip file and open it. Open the index.html file with Google Chrome or any browser, but I designed it with google chrome in mind and then you will be able to see the website.
 
 Overview:  
 The purpose of a portfolio is to showcase work to potential employers. I started this project from scratch rather than building upon my portfolio from assignment 1 because what I had envisioned was completely different from before. I used HTML, CSS, and JavaScript to implement the features.
