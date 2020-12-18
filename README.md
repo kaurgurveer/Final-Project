@@ -23,7 +23,7 @@ d.	Hover animations was implemented on all the pages because it takes place in t
 5.	I edited text and background color to make sure website is visually nice.
 6.	I edited background picture to make sure website is visually nice and readable.
 7.	I edited padding and margins to make website readable. 
-8.	Vega-Lite: I got covid-19 data from a third party API and embedded the data in bar graphs using Vega-Lite. I displayed the number of confirmed, recovered, active, and death cases in each country. The bar graph is long due to the large number of countries recorded so u have to scroll through the page.      
+8.	Vega-Lite: I got covid-19 data from a third party API and embedded the data in bar graphs using Vega-Lite. I displayed the number of confirmed, recovered, active, and death cases in each country in the visualization page. The bar graph is long due to the large number of countries recorded so u have to scroll through the page.      
 Link of where I got the data:    
 https://github.com/M-Media-Group/Covid-19-API   
 
