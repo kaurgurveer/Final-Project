@@ -28,7 +28,8 @@ Link of where I got the data:
 https://github.com/M-Media-Group/Covid-19-API   
 
 Other:  
-I added a favicon.
+I added a favicon.   
+I added a particle animation in the background in the about page.    
 
 Resources:   
 https://www.youtube.com/watch?v=67_DXhS3_Hc  
