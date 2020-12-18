@@ -39,7 +39,7 @@ https://makitweb.com/html-how-to-show-text-above-image-on-hover/
 https://www.youtube.com/watch?v=gOFSumPpl5s   
 https://www.youtube.com/watch?v=H4MkGzoACpQ    
 https://www.youtube.com/watch?v=ptfUwPJbGlQ    
-https://www.youtube.com/watch?v=Syg_9iB1vco 
+https://www.youtube.com/watch?v=Syg_9iB1vco      
+https://www.youtube.com/watch?v=cUzihD4JBQU    
 https://www.w3schools.com/     
-https://stackoverflow.com/    
-https://www.youtube.com/watch?v=cUzihD4JBQU  
+https://stackoverflow.com/     
