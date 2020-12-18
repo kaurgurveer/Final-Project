@@ -268,6 +268,11 @@ img{
 }
 
 /*styling for about.html and the typography animation:*/
+#particles-js{
+  height: 100%;
+  background: #a29da9;
+}
+
 .about-container{
   text-align: center;
   position: absolute;
