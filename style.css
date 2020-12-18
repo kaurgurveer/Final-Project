@@ -253,7 +253,7 @@ img{
   text-align: center;
 }
 
-#persona{
+.persona{
   display: block;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -438,7 +438,7 @@ img{
   }
 
   /*styling the pictures for sparkset.html in smaller screens*/
-  #persona{
+  .persona{
     display: block;
     margin-bottom: 2rem;
     margin-left: auto;
