@@ -262,6 +262,11 @@ img{
   height: auto;
 }
 
+/*styling for visulatization.html*/
+.visualization{
+  text-align: center;
+}
+
 /*styling for about.html and the typography animation:*/
 .about-container{
   text-align: center;
